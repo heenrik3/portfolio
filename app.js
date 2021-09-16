@@ -1,6 +1,6 @@
 'use strict'
 
-document.title = 'HENRIK'
+document.title = 'Portfolio - Henrique'
 
 // document.querySelector('.theme__icon').addEventListener('click', themeSwitch)
 
