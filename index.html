@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css" />
+  <link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+  integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+  crossorigin="anonymous"
+  />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="header__wrapper">
+        <!-- <div class="theme">
+          <i class="theme__icon fas fa-sun"></i>
+        </div> -->
+        <nav class="nav">
+          <ul class="nav__list">
+            <a class="nav__link" href="#about">
+              <button class="nav__btn nav__btn--1">
+                <li class="nav__item" >sobre</li>
+              </button>
+            </a>
+            <a class="nav__link" href="#skills">
+              <button class="nav__btn nav__btn--2">
+                <li class="nav__item" >skills</li>
+              </button>
+            </a>
+            <a class="nav__link" href="#portfolio">
+              <button class="nav__btn nav__btn--3">
+                <li class="nav__item" >portfolio</li>
+              </button>
+            </a>
+
+            <a class="nav__link" href="#contact">
+              <button class="nav__btn nav__btn--4">
+                <li class="nav__item">contato</li>
+              </button>
+            </a>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="meet">
+      <div class="info">
+        <div class="info-box">
+          <span class="info__s24">olá!</span>
+          <span class="info__s24">eu sou</span>
+        </div>
+        <div class="info-box">
+          <span class="info__s64">henrik</span>
+          <span class="info__s18">desenvolvedor</span>
+        </div>
+        <div class="find-me">
+          <div class="icon-box extern" id="github">
+            <i class="fab fa-github"></i>
+          </div>
+          <div class="icon-box extern" id="linkedin">
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+        </div>
+      </div>
+      <img class="pic" src="res/pic.jpg" alt="me" />
+      <div class="back-box">&nbsp</div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="section__title-box">
+        <h1 class="section__title">sobre</h1>
+      </div>
+
+      <span class="about__text"></span>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="section__title-box">
+        <h1 class="section__title">skills</h1>
+      </div>
+      <div class="skills__box">
+        <div class="skill skill__html5">
+          <i class="skill__icon fab fa-html5"></i>
+          <span class="skill__title">html5</span>
+        </div>
+        <div class="skill skill__css3">
+          <i class="skill__icon fab fa-css3-alt"></i>
+          <span class="skill__title">css3</span>
+        </div>
+        <div class="skill skill__sass">
+          <i class="skill__icon fab fa-sass"></i>
+          <span class="skill__title">sass</span>
+        </div>
+        <div class="skill skill__javascript">
+          <i class="skill__icon fab fa-js"></i>
+          <span class="skill__title">javascript</span>
+        </div>
+
+        <div class="skill skill__react">
+          <i class="skill__icon fab fa-react"></i>
+          <span class="skill__title">react</span>
+        </div>
+        <div class="skill skill__python">
+          <i class="skill__icon fab fa-python"></i>
+          <span class="skill__title">python</span>
+        </div>
+
+        <div class="skill skill__git">
+          <i class="skill__icon fab fa-git-alt"></i>
+          <span class="skill__title">git</span>
+        </div>
+        <div class="skill skill__figma">
+          <i class="skill__icon fab fa-figma"></i>
+          <span class="skill__title">figma</span>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <div class="section__container">
+        <div class="section__title-box">
+          <h1 class="section__title">portfolio</h1>
+        </div>
+        <div class="cards__box">
+          <div class="card extern" id="vyag">
+
+            <picture class="card__media">
+              <h1 class="click">acessar</h1>
+              <div class="card__overlay"></div>
+
+              <img src="res/vyag.png" alt="1" class="card__image">
+            </picture>
+            <span class="card__description"
+            ><span>vyag</span><br>agencia espacial com viagens para a
+            terra.<br /></span>
+
+          </div>
+          <div class="card extern" id="climacheca">
+            <picture class="card__media">
+              <h1 class="click">acessar</h1>
+              <div class="card__overlay"></div>
+              <img src="res/clima.png" alt="1" class="card__image">
+            </picture>
+            <span class="card__description"><span>ClimaCheca</span><br>consulta o clima atual de uma cidade.<br />
+            </span
+            ></span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section__container">
+        <div class="section__title-box">
+          <h1 class="section__title">contato</h1>
+        </div>
+
+        <h1 class="contact__info"><i class="fas fa-inbox"></i>henriqlh@gmail.com</h1>
+        <h1 class="contact__info"><i class="fas fa-phone-alt"></i>  21 9 8089-9491</h1>
+        <h1 class="contact__info"><i class="fas fa-map-marker-alt"></i> Nova Iguaçu - RJ</h1>
+
+      </div>
+    </section>
+
+    <footer class="footer">
+      <h1 class="footer__text">henrik</h1>
+      <div class="socials">
+        <i class="fab fa-github-square extern" id="github"></i>
+        <i class="fab fa-linkedin extern" id="linkedin"></i>
+        <i class="fab fa-twitter-square extern" id="twitter"></i>
+      </div>
+    </footer>
+  </div>
+
+  <script src="app.js" charset="utf-8"></script>
+</body>
+</html>
