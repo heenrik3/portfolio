@@ -1,0 +1,51 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: inherit
+
+html
+    font-size: 62.5%
+
+body
+    box-sizing: border-box
+
+a, button, input, textarea
+    color: inherit
+    font-family: inherit
+    font-size: inherit
+    font-weight: inherit
+
+a
+    height: 100%
+    width: 100%
+    cursor: pointer
+    text-decoration: none
+
+    display: block
+    -webkit-tap-highlight-color: transparent
+
+button, input, textarea
+    border: none
+
+input, textarea
+    height: 100%
+    width: 100%
+
+textarea
+    resize: none
+
+span
+    height: fit-content
+    
+ul
+    list-style-type: none
+
+.app
+    display: flex
+    flex-direction: column
+
+    position: relative
+    overflow: hidden
+
+    @include ondark
+        background-color: black

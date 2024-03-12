@@ -1,0 +1,89 @@
+
+@mixin ondark
+    @media (prefers-color-scheme: dark)
+        @content
+
+@mixin chip
+    padding: 1rem 1.4rem
+    width: fit-content
+    background-color: $font-color
+    border-radius: 2rem
+
+    color: $light-gray
+
+    display: flex
+    align-items: center
+    gap: 1rem
+
+@mixin card
+    padding: 2rem
+    border-radius: 1rem
+    background-color: $light-gray
+    flex: 1
+
+    @include ondark
+        background-color: $black
+
+@mixin card2
+    padding: 2rem
+    border-radius: 5px
+    background-color: lighten($font-color, 80%)
+    flex: 1
+
+    @include ondark
+        background-color: darken($light-gray, 75%)
+    
+    
+@mixin animate
+    animation: moveUp .5s
+    animation-fill-mode: backwards
+
+@mixin comein
+    animation: ComeIn 500ms ease .2s 1 normal backwards
+
+@mixin skeleton
+    animation: skeleton-loading .5s linear infinite alternate
+    
+
+@mixin scroll
+    overflow-y: auto
+
+    scrollbar-width: none
+    -ms-overflow-style: none
+
+    &::-webkit-scrollbar
+        display: none
+
+    
+
+@mixin button
+    width: fit-content
+    padding: 1rem 2rem
+    border-radius: 2rem
+    cursor: pointer
+    transition: .2s
+    @include gradient
+
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 1rem
+    
+  
+@mixin gradient
+    color: white
+    font-weight: bold
+    background: linear-gradient( 135deg, #70F570 10%, #49C628 100%)
+
+@mixin respond($breakpoint)
+    @if $breakpoint == phone
+        @media only screen and (max-width: 37.5em)
+          @content    //600px
+
+    @if $breakpoint == tab-port
+        @media only screen and (max-width: 56.25em)
+          @content     //900px
+
+    @if $breakpoint == tab-land
+        @media only screen and (max-width: 75em)
+          @content    //1200px

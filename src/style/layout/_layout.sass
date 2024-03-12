@@ -1,0 +1,82 @@
+.layout
+    display: grid
+    grid-template-rows: auto 1fr
+    gap: 1rem
+    flex: 1
+    overflow: hidden
+
+    animation: moveUp .5s
+    animation-fill-mode: backwards
+
+    &__header
+
+        display: flex
+        overflow: hidden
+
+        & header
+            width: 100%
+            margin: 5rem 40rem 0
+            display: flex
+            align-items: center
+            gap: 2rem
+            overflow: hidden
+            
+            @include respond(tab-land)
+                margin: 3rem 15rem 0rem
+                gap: 3rem
+
+            @include respond(tab-port)
+                margin: 2rem 10rem 0rem
+                gap: 2rem
+
+            @include respond(phone)
+                margin: 2rem 2rem 0rem
+                gap: 1rem
+    
+    &__button
+        height: 4rem
+        min-width: 4rem
+        border-radius: 50%
+        overflow: hidden
+        @include gradient
+
+        & a
+            min-width: 100%
+
+            display: flex
+            align-items: center
+            justify-content: center
+
+    &__title
+        font-size: 6rem
+        // overflow-x: auto
+        line-break: auto
+
+        & h4
+            // width: max-content
+
+    &__content
+        display: flex
+        flex-direction: column
+        @include scroll
+
+    &__page
+        margin: 5rem 40rem 10rem
+
+        display: flex
+        flex-direction: column
+        gap: 4rem
+
+        flex: 1
+
+        @include respond(tab-land)
+            margin: 0rem 15rem 10rem
+            gap: 3rem
+
+        @include respond(tab-port)
+            margin: 0rem 10rem 10rem
+            gap: 2rem
+
+        @include respond(phone)
+            margin: 0rem 2rem 10rem
+            gap: 2rem

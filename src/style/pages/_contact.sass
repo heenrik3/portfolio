@@ -1,0 +1,53 @@
+.form
+    display: flex
+    flex-direction: column
+    gap: 1rem
+    flex: 1
+
+    & > :nth-child(3)
+        flex: 1
+
+    &__input
+        display: flex
+        flex-direction: column
+        gap: .5rem
+
+        & label
+            font-weight: bold
+
+        & input, textarea
+            padding: 1rem 2rem
+            border-radius: 1rem
+
+            background-color: $light-gray
+
+            &:disabled
+                opacity: .5
+
+        &--dark
+
+            & input, textarea
+                background-color: $black
+
+    &__container
+        display: flex
+        justify-content: space-between
+    
+        & span
+            min-width: 5rem
+            border-radius: 1rem
+            font-weight: bold
+            @include gradient
+
+            @include comein
+
+            display: flex
+            align-items: center
+            justify-content: center
+
+    &__btn
+        align-self: end
+
+        display: flex
+        align-items: center
+        justify-content: center

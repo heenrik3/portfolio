@@ -1,0 +1,51 @@
+.avatar
+    display: flex
+    justify-content: center
+
+    &__picture
+        height: 15rem
+        width: 15rem
+        border-radius: 50%
+        overflow: hidden
+        @include gradient
+
+    &__img
+        height: 100%
+        width: 100%
+        object-fit: cover
+
+.description
+    text-align: justify
+
+.actions
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    gap: 1rem
+
+    @include respond(tab-port)
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 1fr 1fr
+
+    @include respond(phone)
+        & > :nth-child(3)
+            grid-column-start: 1
+            grid-column-end: 3
+
+    & button
+        width: 100%
+
+
+.backend__item
+    display: flex
+    flex-direction: column
+    gap: 2rem
+
+    & section
+        flex: 0
+
+        & span
+            font-weight: bold
+    & i
+        font-size: 8rem
+
+    

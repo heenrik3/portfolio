@@ -1,0 +1,69 @@
+.portfolio
+    display: flex
+    flex: 1
+
+    &__list
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        gap: 2rem
+        flex: 1
+
+        @include animate
+
+        @include respond(tab-port)
+            grid-template-columns: 1fr 1fr
+
+        @include respond(phone)
+            grid-template-columns: 1fr
+
+    &__item
+        border-radius: 1rem
+        box-shadow: rgba(0, 0, 0, .1) 0px 1px 4px
+
+        display: flex
+        flex-direction: column
+        flex: 1
+    
+        overflow: hidden
+
+        @include ondark
+            background-color: rgba(white, .1)
+
+    &__item--skeleton
+        height: fit-content
+        border-radius: 1rem
+        box-shadow: rgba(0, 0, 0, .1) 0px 1px 4px
+
+        display: flex
+        flex-direction: column
+    
+        overflow: hidden
+
+        & picture
+            height: 18rem
+            background-color: white
+
+            @include skeleton
+
+        & div
+            margin: 2rem
+            height: 2rem
+            width: 50%
+            border-radius: 5px
+            background-color: white
+
+            @include skeleton
+
+        @include ondark
+            background-color: rgba(white, .1)
+
+    &__img
+        height: 100%
+        width: 100%
+        object-fit: cover
+
+        transition: .5s
+
+    &__info
+        padding: 0 2rem 2rem
+        font-weight: bold

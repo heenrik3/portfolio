@@ -1,0 +1,66 @@
+.project
+    display: flex
+    flex-direction: column
+    @include scroll
+
+    animation: moveUp 500ms ease 0s 1 normal forwards
+
+    &__content
+        // margin: 2rem 2rem 10rem
+
+        display: flex
+        flex-direction: column
+        gap: 2rem
+
+        & .skeleton:nth-child(2)
+            height: 15rem
+
+        & .skeleton:nth-child(3)
+            height: 3rem
+            width: 50%
+
+        & .skeleton:nth-child(4)
+            height: 30rem
+
+        & .skeleton:nth-child(5)
+            height: 20rem
+
+        & .skeleton:nth-child(6)
+            height: 4rem
+            width: 40%
+
+        margin: 2rem 40rem 10rem
+
+        flex: 1
+
+        @include respond(tab-land)
+            margin: 2rem 15rem 10rem
+            gap: 3rem
+
+        @include respond(tab-port)
+            margin: 2rem 10rem 10rem
+            gap: 2rem
+
+        @include respond(phone)
+            margin: 2rem 2rem 10rem
+            gap: 2rem
+
+    &__picture
+        border-radius: 1rem
+        overflow: hidden
+    
+    &__img
+        height: 100%
+        width: 100%
+        object-fit: cover
+
+    &__btn
+        height: fit-content
+        @include button
+
+.lazy
+    filter: blur(15px)
+
+.skeleton
+    border-radius: 15px
+    @include skeleton
